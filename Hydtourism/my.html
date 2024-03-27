@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Hyderabad City Info Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-right">
+           <a href="index.html"><b><p class="nav-text">HY<span class="hyderabad-text">DERABAD</span></p>
+           </a></b>
+        </div>
+        <div class="navbar-left">
+          <b><a href="index.html" class="nav-item">Home</a>
+          <a href="#" class="nav-item">Facts</a>
+          <a href="#" class="nav-item">IT Idustry</a>
+          <a href="#" class="nav-item">Mounuments</a>
+          <a href="#" class="nav-item">Hyderabad Pearls</a>
+          <a href="#" class="nav-item">Secunderabad</a>
+        </b>
+        </div>
+    </nav>
+    <div class="inquiry-card">
+        <h2>Book Now</h2>
+        <br>
+        <form id="inquiryForm">
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select Duration</option>
+              <option value="5-6 days">5-6 days</option>
+              <option value="7-8 days">7-8 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" name="adults" required>
+              <option value="">Select Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" name="children" required>
+              <option value="">Select Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>   
+      <div class="container">
+      <h1>Welcome to Hyderabad</h1>
+      <br>
+      </div>
+   
+    <script src="index.js"></script>
+</body>
+<footer>
+  <div class="copyright">
+      &copy; 2024 Hyderabad | Privacy Policy.
+  </div>
+</html>

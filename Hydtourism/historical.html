@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Hyderabad City Info Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-right">
+           <a href="index.html"><b><p class="nav-text">HY<span class="hyderabad-text">DERABAD</span></p>
+           </a></b>
+        </div>
+        <div class="navbar-left">
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
+              <input type="text" class="search-input" placeholder="Search..." id="searchInput" onkeyup="showSuggestions(this.value)" >
+            </div>
+            <ul class="suggestion-list" id="suggestionList"></ul>
+        </div>
+          <b><a href="index.html" class="nav-item">Home</a>
+            <a href="shopping.html" class="nav-item">Shopping Places</a>
+            <a href="religiousplaces.html" class="nav-item">Religious Places</a>
+            <a href="historical.html" class="nav-item">Historical places</a>
+            <a href="park.html" class="nav-item">Parks</a>
+            <a href="culinary.html" class="nav-item">Culinary</a>
+        </b>
+        </div>
+    </nav>
+    <div class="inquiry-card">
+      <form id="inquiryForm">
+        <h2>Book Now</h2>
+        <br>
+        
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select Duration</option>
+              <option value="5-6 days">5-6 days</option>
+              <option value="7-8 days">7-8 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" name="adults" required>
+              <option value="">Select Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" name="children" required>
+              <option value="">Select Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>   
+      <div class="container" id="backgroundContainer">
+      <!-- <h1>Welcome to Hyderabad</h1> -->
+      <br>
+      </div>
+      <div class="containe">
+        <h1 style="color: #252525;">Historical Places</h1><br>
+        <div class="place">
+            <img src="Images/hyderabadtourbg.jpg" alt="Inorbit">
+            <div class="place-content">
+                <h2>Charminar</h2>
+                <p>
+                    Charminar Built in 1591, the Charminar is an iconic mosque and monument that stands tall in the center of Hyderabad, India. Its most striking feature is the four minarets rising from its roof, which is why it's called Charminar (Char meaning "four" and minar meaning "tower" in Urdu). This architectural marvel served as a mosque for over 425 years and remains a significant religious site.<br><br> &nbsp;&nbsp;&nbsp;&nbsp;Beyond its religious importance, the Charminar has become a symbol of Hyderabad and a major tourist attraction. The area surrounding the monument is a labyrinth of bustling markets, particularly Laad Bazaar, famous for its bangles and pearls. The Charminar's unique blend of history, architecture, and lively atmosphere makes it a must-visit destination in Hyderabad.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="Images/golconda.jpg" alt="Mecca">
+            <div class="place-content">
+                <h2>Golconda Fort</h2>
+                <p>Golconda Fort, a majestic 16th century fort, is an unmissable sight on the outskirts of Hyderabad. Built on a 400-foot high granite hill, the fort was initially a mud structure built by the Kakatiya dynasty. However, it rose to prominence under the Qutb Shahi dynasty who transformed it into a massive complex with three fortified walls, eight gateways, and 87 bastions. <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;The fort was famous not just for its architectural marvel but also as a center of diamond trade. The world-famous KohiNoor diamond was once housed here before being seized by the Mughals. Today, the fort is a popular tourist destination offering stunning views, historical insights and even a light and sound show that brings the fort's glorious past alive.
+                </p>
+            </div>
+        </div> 
+        <div class="place">
+            <img src="Images/Qutb_Shahi_Tomb.jpg" alt="Forum">
+            <div class="place-content">
+                <h2>Qutb Shahi Tombs</h2>
+                <p>The Qutb Shahi Tombs are a collection of mausoleums housing the remains of the Qutb Shahi dynasty rulers, who ruled Hyderabad from 1518 to 1687.  Located just outside the city center, the tombs are known for their distinctive architectural style, which blends Indian and Persian influences. The tombs are built with Deccan trap, a type of volcanic rock, and adorned with intricate carvings and calligraphy. 
+                  <br>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;The most impressive tomb is that of Mohammed Quli Qutb Shah, the founder of Hyderabad. His tomb is a seven-storied structure with stunning views of the surrounding area. The other tombs are also quite beautiful, each with its own unique features. The Qutb Shahi Tombs are a UNESCO World Heritage Site and a popular tourist destination in Hyderabad.</p>
+                  
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+    <script>
+        var imageUrls = ['Images/hyderabadtourbg.jpg','Images/golconda.jpg','Images/Qutb_Shahi_Tomb.jpg'];
+        var container = document.getElementById('backgroundContainer');
+        var currentIndex = 0;
+        function changeBackground() 
+        { container.style.backgroundImage = 'url("' + imageUrls[currentIndex] + '")';
+            currentIndex++;
+            if (currentIndex >= imageUrls.length)
+            {
+                currentIndex = 0;
+            }
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000);
+    </script>
+</body>
+<footer>
+  <div class="copyright">
+      <b>&copy; 2024 Hyderabad | Privacy Policy.</b>
+  </div>
+</html>

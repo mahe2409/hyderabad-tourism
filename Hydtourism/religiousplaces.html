@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Hyderabad City Info Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-right">
+           <a href="index.html"><b><p class="nav-text">HY<span class="hyderabad-text">DERABAD</span></p>
+           </a></b>
+        </div>
+        <div class="navbar-left">
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
+              <input type="text" class="search-input" placeholder="Search..." id="searchInput" onkeyup="showSuggestions(this.value)" >
+            </div>
+            <ul class="suggestion-list" id="suggestionList"></ul>
+        </div>
+          <b><a href="index.html" class="nav-item">Home</a>
+            <a href="shopping.html" class="nav-item">Shopping Places</a>
+            <a href="religiousplaces.html" class="nav-item">Religious Places</a>
+            <a href="historical.html" class="nav-item">Historical places</a>
+            <a href="park.html" class="nav-item">Parks</a>
+            <a href="culinary.html" class="nav-item">Culinary</a>
+        </b>
+        </div>
+    </nav>
+    <div class="inquiry-card">
+      <form id="inquiryForm">
+        <h2>Book Now</h2>
+        <br>
+       
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select Duration</option>
+              <option value="5-6 days">5-6 days</option>
+              <option value="7-8 days">7-8 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" name="adults" required>
+              <option value="">Select Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" name="children" required>
+              <option value="">Select Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>   
+      <div class="container" id="backgroundContainer">
+      <!-- <h1>Welcome to Hyderabad</h1> -->
+      <br>
+      </div>
+      <div class="containe">
+        <h1 style="color: #252525;">Religious Places</h1><br>
+        <div class="place">
+            <img src="Images/birlamandir.JPG" alt="birlamandir">
+            <div class="place-content">
+                <h2>Birla Mandir</h2>
+                <p>Birla Mandir, perched atop Naubath Pahad in Hyderabad, is a magnificent Hindu temple dedicated to Lord Venkateswara and Goddess Lakshmi. Constructed between 1964 and 1976 by the Birla Foundation, the temple's white marble architecture combines Dravidian, Rajasthani, and Utkala styles, adorned with intricate carvings and sculptures depicting Hindu mythology. Beyond its religious significance, the temple offers panoramic views of Hyderabad and features a serene ambiance that attracts visitors seeking spiritual solace and architectural marvels. <br><br> &nbsp;&nbsp;&nbsp;&nbsp; With its grand entrance and main sanctum housing beautifully adorned idols, Birla Mandir is a beacon of religious harmony and architectural splendor. A separate shrine dedicated to Lord Buddha underscores the temple's ethos of inclusivity. Festivals like Diwali and Navaratri witness the temple adorned with lights and bustling with devotees, showcasing its vibrant cultural significance. Birla Mandir remains a cherished symbol of Hyderabad's cultural heritage, welcoming visitors to experience its divine beauty and spiritual serenity.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="Images/st-joseph-cathedral.jpg" alt="st-joseph-cathedral">
+            <div class="place-content">
+                <h2>St. Joseph's Cathedral</h2>
+                <p>
+                  St. Joseph's Cathedral, located in the heart of Hyderabad, is a prominent Catholic church renowned for its architectural elegance and religious significance. Established in the late 19th century, the cathedral stands as a testament to the city's rich Christian heritage and serves as a spiritual hub for the Catholic community. 
+                  <br>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; Constructed in the Gothic Revival style, St. Joseph's Cathedral features towering spires, intricate stained glass windows, and ornate interiors adorned with religious motifs. The cathedral's imposing facade and majestic bell towers command attention, drawing visitors and worshippers alike to its serene ambiance and divine presence.  
+                  <br>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; As one of the oldest churches in Hyderabad, St. Joseph's Cathedral holds a special place in the city's cultural tapestry. It serves as a place of worship, contemplation, and community gathering, hosting regular religious services, festive celebrations, and cultural events that resonate with believers and visitors from all walks of life. With its timeless beauty and spiritual significance, St. Joseph's Cathedral continues to inspire reverence and awe, embodying the enduring spirit of faith and devotion in Hyderabad.</p>
+                  
+            </div>
+        </div>
+        <div class="place">
+            <img src="Images/meccamasjid.jpg" alt="Mecca">
+            <div class="place-content">
+                <h2>Mecca Masjid</h2>
+                <p>
+                  Mecca Masjid, located in Hyderabad, India, is a significant mosque known for its historical and architectural importance. Construction began in 1617 under Sultan Muhammad Quli Qutb Shah and was completed in 1694 by Mughal Emperor Aurangzeb. Its architecture reflects a blend of Persian, Mughal, and Indian styles. The mosque's main hall accommodates thousands of worshippers and features intricately carved arches, domes, and minarets. It holds the tombs of Sultan Muhammad Quli Qutb Shah and his family. Mecca Masjid serves as a symbol of Hyderabad's cultural heritage and hosts various religious and cultural events throughout the year. <br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp; Its construction using bricks from Mecca and the architectural influences from various periods make it a unique blend of cultural and religious significance. The mosque's accessibility to visitors of all faiths fosters an atmosphere of inclusivity and cultural exchange,the mosque continues to draw people from around the world, offering them a glimpse into Hyderabad's vibrant past and enduring spiritual legacy.
+                </p>
+            </div>
+        </div>
+        <div class="place">
+          <img src="Images/gurdwar.jpg" alt="Mecca">
+          <div class="place-content">
+              <h2>Gurudwara Sri Guru Singh Sabha</h2>
+              <p>
+              Gurudwara Sri Guru Singh Sabha, situated in Secunderabad, Telangana, stands as a significant spiritual and cultural hub for the Sikh community. With its rich history and traditional Sikh architecture, including a central prayer hall where the Guru Granth Sahib is revered, the Gurudwara fosters a sense of reverence and unity among worshippers. Beyond its religious functions, the Gurudwara actively engages in community service through initiatives like the Langar, offering free meals to visitors of all backgrounds, exemplifying the Sikh principle of seva (selfless service).<br> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;Embracing visitors of all faiths, Gurudwara Sri Guru Singh Sabha welcomes individuals seeking spiritual solace or a glimpse into Sikh traditions. Its inclusive atmosphere and commitment to community welfare make it not only a place of worship but also a beacon of compassion and unity in the vibrant city of Secunderabad.
+              </p>
+          </div>
+      </div> 
+    </div>
+    
+    <script src="index.js"></script>
+    <script>
+        var imageUrls = ['Images/st-joseph-cathedral.jpg','Images/hyderabadtourbg.jpg','Images/meccamasjid.jpg','Images/birlamandir.jpg'];
+        var container = document.getElementById('backgroundContainer');
+        var currentIndex = 0;
+        function changeBackground() 
+        { container.style.backgroundImage = 'url("' + imageUrls[currentIndex] + '")';
+            currentIndex++;
+            if (currentIndex >= imageUrls.length)
+            {
+                currentIndex = 0;
+            }
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000);
+    </script>
+</body>
+<footer>
+  <div class="copyright">
+      <b>&copy; 2024 Hyderabad | Privacy Policy.</b>
+  </div>
+</html>

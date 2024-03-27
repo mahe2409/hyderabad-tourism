@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Hyderabad City Info Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-right">
+           <a href="index.html"><b><p class="nav-text">HY<span class="hyderabad-text">DERABAD</span></p>
+           </a></b>
+        </div>
+        <div class="navbar-left">
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
+              <input type="text" class="search-input" placeholder="Search..." id="searchInput" onkeyup="showSuggestions(this.value)" >
+            </div>
+            <ul class="suggestion-list" id="suggestionList"></ul>
+        </div>
+          <b><a href="index.html" class="nav-item">Home</a>
+            <a href="shopping.html" class="nav-item">Shopping Places</a>
+            <a href="religiousplaces.html" class="nav-item">Religious Places</a>
+            <a href="historical.html" class="nav-item">Historical places</a>
+            <a href="park.html" class="nav-item">Parks</a>
+            <a href="culinary.html" class="nav-item">Culinary</a>
+        </b>
+        </div>
+    </nav>
+    <div class="inquiry-card">
+      <form id="inquiryForm">
+        <h2>Book Now</h2>
+        <br>
+       
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select Duration</option>
+              <option value="5-6 days">5-6 days</option>
+              <option value="7-8 days">7-8 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" name="adults" required>
+              <option value="">Select Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" name="children" required>
+              <option value="">Select Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>   
+      <div class="container" id="backgroundContainer">
+      <!-- <h1>Welcome to Hyderabad</h1> -->
+      <br>
+      </div>
+      <div class="containe">
+        <h1 style="color: #252525;">Shopping Places</h1><br>
+        <div class="place">
+            <img src="Images/In_Orbit_Mall.jpg" alt="Inorbit">
+            <div class="place-content">
+                <h2>Inorbit Mall</h2>
+                <p>Inorbit Mall, one of the premier shopping destinations in Hyderabad, offers a diverse range of retail, entertainment, and dining experiences. Strategically located in the hi-tech city area of Hyderabad, Inorbit Mall caters to the needs and preferences of shoppers from various demographics. Boasting a modern and spacious layout, the mall houses a plethora of national and international brands across fashion, electronics, cosmetics, accessories, and more, making it a one-stop destination for all shopping needs. Additionally, Inorbit Mall features a multiplex cinema, gaming zones, food courts, and specialty restaurants, providing visitors with ample opportunities for leisure and entertainment. <br><br> &nbsp;&nbsp;&nbsp;&nbsp; Furthermore, Inorbit Mall in Hyderabad serves as a vibrant social hub, hosting numerous events, promotions, and cultural activities throughout the year. From fashion shows and product launches to live performances and festive celebrations, the mall offers a dynamic and engaging environment for shoppers and visitors. With its convenient location, extensive retail offerings, and lively ambiance, Inorbit Mall continues to be a favored destination for both locals and tourists seeking a fulfilling shopping and entertainment experience in Hyderabad.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="Images/chudibazar.jpg" alt="Mecca">
+            <div class="place-content">
+                <h2>Chudi Bazar</h2>
+                <p>Chudi Bazar, also known as Laad Bazaar, is a renowned shopping destination nestled in the bustling lanes around Charminar in Hyderabad's old city. The market is famous for its exquisite collection of bangles, particularly lacquer bangles (lac bangles) adorned with intricate designs, colorful stones, and embellishments. Visitors can explore a wide variety of bangles crafted by skilled artisans, ranging from traditional to contemporary styles, making Chudi Bazar a paradise for bangle enthusiasts and shoppers looking for unique accessories.<br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Moreover, Chudi Bazar isn't just about bangles; it offers a diverse array of products, including traditional Indian attire, jewelry, perfumes, and handicrafts. The market's vibrant ambiance, narrow alleys, and bustling shops create a lively atmosphere, attracting locals and tourists alike. With its rich cultural heritage, historical significance, and eclectic shopping experience, Chudi Bazar remains a must-visit destination for those seeking to explore the charm and diversity of Hyderabad's old city.
+                </p>
+            </div>
+        </div> 
+        <div class="place">
+            <img src="Images/forum.jpg" alt="Forum">
+            <div class="place-content">
+                <h2>Forum Sujana Mall</h2>
+                <p>Forum Sujana Mall, situated in the Kukatpally area of Hyderabad, is a bustling retail and entertainment complex catering to the diverse needs of shoppers in the city. With its contemporary design and spacious layout, the mall offers a wide array of retail outlets featuring both national and international brands across fashion, electronics, home decor, and more. Visitors can indulge in a satisfying shopping experience while exploring the latest trends and styles in clothing, accessories, and lifestyle products. Additionally, Forum Sujana Mall provides ample leisure and entertainment options, including a multiplex cinema, gaming zones, and a vibrant food court offering a variety of culinary delights.
+                  <br>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp; Moreover, Forum Sujana Mall serves as a dynamic social hub, hosting a myriad of events, exhibitions, and cultural activities throughout the year. From fashion shows and art exhibitions to live music performances and festive celebrations, the mall offers an engaging and lively atmosphere for shoppers and visitors alike. Its convenient location, diverse retail offerings, and vibrant ambiance make Forum Sujana Mall a popular destination for locals and tourists seeking a comprehensive shopping and entertainment experience in Hyderabad.</p>
+                  
+            </div>
+        </div>
+        <div class="place">
+            <img src="Images/begum-bazar-hyderabad.jpg" alt="Mecca">
+            <div class="place-content">
+                <h2>Begum Bazar</h2>
+                <p>Begum Bazar, located in the old city area of Hyderabad, is one of the oldest and busiest commercial markets in the city. Renowned for its vibrant atmosphere and diverse array of goods, Begum Bazar attracts shoppers from all walks of life. The market is particularly famous for its wholesale trade, offering a wide range of products including textiles, garments, electronics, kitchenware, household items, and more at competitive prices. From bustling narrow lanes to crowded shops and roadside stalls, Begum Bazar presents a bustling and dynamic shopping experience where visitors can find almost anything they're looking for.<br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Furthermore, Begum Bazar is not just a marketplace; it's a cultural and historical landmark that has retained its charm and significance over the years. The market's origins date back to the time of the Nizams, and it continues to reflect the rich heritage and traditions of Hyderabad. Beyond shopping, visitors to Begum Bazar can immerse themselves in the local culture, sample authentic street food, and witness the vibrant hustle and bustle of one of Hyderabad's most iconic and lively markets.
+                </p>
+            </div>
+        </div>
+       
+    </div>
+    
+    <script src="index.js"></script>
+    <script>
+        var imageUrls = ['Images/In_Orbit_Mall.jpg','Images/chudibazar.jpg','Images/forum.jpg','Images/begum-bazar-hyderabad.jpg'];
+        var container = document.getElementById('backgroundContainer');
+        var currentIndex = 0;
+        function changeBackground() 
+        { container.style.backgroundImage = 'url("' + imageUrls[currentIndex] + '")';
+            currentIndex++;
+            if (currentIndex >= imageUrls.length)
+            {
+                currentIndex = 0;
+            }
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000);
+    </script>
+</body>
+<footer>
+  <div class="copyright">
+      <b>&copy; 2024 Hyderabad | Privacy Policy.</b>
+  </div>
+</html>

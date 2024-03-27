@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Hyderabad City Info Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-right">
+           <a href="index.html"><b><p class="nav-text">HY<span class="hyderabad-text">DERABAD</span></p>
+           </a></b>
+        </div>
+        <div class="navbar-left">
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
+              <input type="text" class="search-input" placeholder="Search..." id="searchInput" onkeyup="showSuggestions(this.value)" >
+            </div>
+            <ul class="suggestion-list" id="suggestionList"></ul>
+        </div>
+          <b><a href="index.html" class="nav-item">Home</a>
+            <a href="shopping.html" class="nav-item">Shopping Places</a>
+            <a href="religiousplaces.html" class="nav-item">Religious Places</a>
+            <a href="historical.html" class="nav-item">Historical places</a>
+            <a href="park.html" class="nav-item">Parks</a>
+            <a href="culinary.html" class="nav-item">Culinary</a>
+        </b>
+        </div>
+    </nav>
+    <div class="inquiry-card">
+      <form id="inquiryForm">
+        <h2>Book Now</h2>
+        <br>
+       
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select Duration</option>
+              <option value="5-6 days">5-6 days</option>
+              <option value="7-8 days">7-8 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" name="adults" required>
+              <option value="">Select Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" name="children" required>
+              <option value="">Select Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>   
+      <div class="container" id="backgroundContainer">
+      <!-- <h1>Welcome to Hyderabad</h1> -->
+      <br>
+      </div>
+      <div class="containe">
+        <h1 style="color: #252525;">Cuisine Delights</h1><br>
+        <div class="place">
+            <img src="Images/Paradise.jpg" alt="Inorbit">
+            <div class="place-content">
+                <h2>Paradise Biryani</h2>
+                <p>Paradise Biryani, an iconic culinary institution in Hyderabad, is renowned for its delectable biryani and rich culinary legacy. Established in 1953, Paradise has grown from a humble eatery to a beloved brand synonymous with authentic Hyderabadi cuisine. The restaurant's flagship dish, the Hyderabadi biryani, is a fragrant and flavorful rice dish cooked with succulent pieces of meat, aromatic spices, and fragrant saffron-infused rice, creating a culinary masterpiece that delights the senses.<br><br> &nbsp;&nbsp;&nbsp;&nbsp;With multiple outlets across Hyderabad and beyond, Paradise Biryani has become a go-to destination for locals and tourists alike seeking an unforgettable dining experience. Beyond biryani, the restaurant offers an extensive menu featuring a variety of traditional Hyderabadi dishes, kebabs, curries, and desserts, ensuring there's something to satisfy every palate. Whether it's a casual meal with friends or a special occasion celebration, Paradise Biryani continues to captivate diners with its impeccable hospitality, warm ambiance, and mouthwatering culinary creations, making it a cherished culinary institution in the city.
+                </p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="Images/charminarfood.jpeg" alt="Mecca">
+            <div class="place-content">
+                <h2>Old City Food shops</h2>
+                <p>Charminar, a historic monument and cultural icon in Hyderabad, is surrounded by a vibrant culinary scene that offers a tantalizing array of street food and traditional Hyderabadi delicacies. The bustling streets around Charminar are dotted with eateries, food stalls, and vendors serving up a mouthwatering assortment of local favorites. From aromatic biryanis and flavorful kebabs to indulgent desserts and refreshing beverages, visitors to Charminar can embark on a gastronomic adventure that tantalizes the taste buds and delights the senses.<br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Moreover, Nehru Zoological Park provides an immersive and interactive experience for visitors of all ages, with amenities such as safari rides, battery-operated vehicles, and guided tours available to explore the vast expanse of the zoo. Families and nature enthusiasts can enjoy picnics amidst the greenery, children can delight in playgrounds and recreational areas, and wildlife enthusiasts can indulge in photography and wildlife observation. With its diverse collection of animals, educational exhibits, and recreational activities, Nehru Zoological Park offers a memorable and enriching experience for visitors, fostering a deeper appreciation for the wonders of the natural world and the importance of wildlife conservation.
+                </p>
+            </div>
+        </div> 
+        <div class="place">
+            <img src="Images/dlfstrret.jpg" alt="Forum">
+            <div class="place-content">
+                <h2>DLF Street</h2>
+                <p>DLF Street in Gachibowli, Hyderabad, presents a diverse and vibrant culinary landscape that caters to every palate and preference. Amidst the bustling street food scene, food enthusiasts can discover a plethora of enticing eateries and kiosks offering a wide range of delectable delights. From traditional favorites to innovative creations, DLF Street has something for everyone, whether you're craving indulgent treats or healthier alternatives
+                  <br>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;For tender coconut lovers, Coconut Juice Bar offers pure coconut water and refreshing beverages, while Miracle Millet serves up steaming hot 'Cone Idlis' made with a blend of millets and ragi, providing a guilt-free option amidst the array of greasy street food. Additionally, visitors can indulge in creamy delights at Amul's ice cream shop, sample authentic Hyderabadi snacks at Varalakshmi Tiffins, or satisfy cravings with savory Maggi dishes and eccentric momo varieties at AM - PM Maggi Point and Momos Delight, respectively. With its diverse culinary offerings and lively atmosphere, DLF Street promises an unforgettable gastronomic adventure for food enthusiasts in Hyderabad.</p>
+                  
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+    <script>
+        var imageUrls = ['Images/dlfstrret.jpg','Images/Paradise.jpg','Images/charminarfood.jpeg'];
+        var container = document.getElementById('backgroundContainer');
+        var currentIndex = 0;
+        function changeBackground() 
+        { container.style.backgroundImage = 'url("' + imageUrls[currentIndex] + '")';
+            currentIndex++;
+            if (currentIndex >= imageUrls.length)
+            {
+                currentIndex = 0;
+            }
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000);
+    </script>
+</body>
+<footer>
+  <div class="copyright">
+      <b>&copy; 2024 Hyderabad | Privacy Policy.</b>
+  </div>
+</html>

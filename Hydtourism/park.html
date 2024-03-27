@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Hyderabad City Info Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-right">
+           <a href="index.html"><b><p class="nav-text">HY<span class="hyderabad-text">DERABAD</span></p>
+           </a></b>
+        </div>
+        <div class="navbar-left">
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
+              <input type="text" class="search-input" placeholder="Search..." id="searchInput" onkeyup="showSuggestions(this.value)" >
+            </div>
+            <ul class="suggestion-list" id="suggestionList"></ul>
+        </div>
+          <b><a href="index.html" class="nav-item">Home</a>
+            <a href="shopping.html" class="nav-item">Shopping Places</a>
+            <a href="religiousplaces.html" class="nav-item">Religious Places</a>
+            <a href="historical.html" class="nav-item">Historical places</a>
+            <a href="park.html" class="nav-item">Parks</a>
+            <a href="culinary.html" class="nav-item">Culinary</a>
+        </b>
+        </div>
+    </nav>
+    <div class="inquiry-card">
+      <form id="inquiryForm">
+        <h2>Book Now</h2>
+        <br>
+       
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="arrivalDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration</label>
+            <select id="duration" name="duration" required>
+              <option value="">Select Duration</option>
+              <option value="5-6 days">5-6 days</option>
+              <option value="7-8 days">7-8 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" name="adults" required>
+              <option value="">Select Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" name="children" required>
+              <option value="">Select Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>   
+      <div class="container" id="backgroundContainer">
+      <!-- <h1>Welcome to Hyderabad</h1> -->
+      <br>
+      </div>
+      <div class="containe">
+        <h1 style="color: #252525;">Nature & Parks</h1><br>
+        <div class="place">
+            <img src="Images/Lumbini-Park.jpg" alt="Inorbit">
+            <div class="place-content">
+                <h2>Lumbini Park</h2>
+                <p>Lumbini Park, situated on the banks of the picturesque Hussain Sagar Lake in Hyderabad, is a popular recreational spot and tourist attraction. Named after Lumbini, the birthplace of Lord Buddha, the park offers visitors stunning views of the lake and the iconic Buddha statue, which stands tall on a rock island in the middle of the lake. The park features well-manicured lawns, lush gardens, and walking paths, providing a serene ambiance for relaxation and leisurely strolls. Additionally, Lumbini Park is known for its boating facilities, allowing visitors to enjoy tranquil rides on the lake while admiring the cityscape and the historic monuments that dot its shores.<br><br> &nbsp;&nbsp;&nbsp;&nbsp; In the evenings, Lumbini Park comes alive with vibrant musical fountain shows, which combine colorful lights, synchronized music, and dancing water jets to create a mesmerizing visual spectacle. These fountain shows are a major draw for both locals and tourists, offering an enchanting experience that delights visitors of all ages. With its scenic beauty, recreational amenities, and captivating fountain displays, Lumbini Park remains a cherished destination for those seeking relaxation and entertainment amidst the natural beauty of Hyderabad's urban landscape.</p>
+            </div>
+        </div>
+        <div class="place">
+            <img src="Images/zoopark.jpg" alt="Mecca">
+            <div class="place-content">
+                <h2>Nehru Zoological Park</h2>
+                <p>Nehru Zoological Park, located in Hyderabad, Telangana, is one of the largest zoos in India and a prominent tourist attraction. Sprawling across an expansive area, the zoo is home to a diverse array of wildlife species, including mammals, birds, reptiles, and amphibians, housed in naturalistic enclosures that mimic their natural habitats. Visitors can embark on a captivating journey through the zoo's lush landscapes and winding pathways, encountering fascinating animals such as lions, tigers, elephants, giraffes, and exotic birds along the way. The park also features specialized sections dedicated to rare and endangered species, conservation efforts, and educational exhibits, offering visitors insight into wildlife conservation and biodiversity.<br> <br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Moreover, Nehru Zoological Park provides an immersive and interactive experience for visitors of all ages, with amenities such as safari rides, battery-operated vehicles, and guided tours available to explore the vast expanse of the zoo. Families and nature enthusiasts can enjoy picnics amidst the greenery, children can delight in playgrounds and recreational areas, and wildlife enthusiasts can indulge in photography and wildlife observation. With its diverse collection of animals, educational exhibits, and recreational activities, Nehru Zoological Park offers a memorable and enriching experience for visitors, fostering a deeper appreciation for the wonders of the natural world and the importance of wildlife conservation.
+                </p>
+            </div>
+        </div> 
+        <div class="place">
+            <img src="Images/botanica.jpg" alt="Forum">
+            <div class="place-content">
+                <h2>Botanical Garden</h2>
+                <p>The Botanical Garden in Hyderabad, located near Kothaguda Junction, is a sprawling green oasis that showcases a diverse collection of plants, trees, and flowers. Spanning over acres of land, the garden features meticulously curated themed sections, including medicinal plants, aromatic herbs, succulents, bonsai, and more, providing visitors with a fascinating botanical journey. The garden's tranquil ambiance, serene walking trails, and scenic landscapes make it an ideal destination for nature lovers, photography enthusiasts, and families seeking a peaceful retreat amidst the urban hustle and bustle.
+                  <br>
+                  <br>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Additionally, the Botanical Garden serves as a valuable educational resource and research center, promoting awareness about plant diversity, conservation, and sustainable gardening practices. Visitors can engage in guided tours, workshops, and interactive exhibits aimed at fostering a deeper understanding of botany and environmental conservation. Whether it's exploring the diverse flora, enjoying leisurely walks amidst lush greenery, or learning about the importance of biodiversity, the Botanical Garden offers a refreshing and enriching experience for visitors of all ages, encouraging a deeper appreciation for the wonders of the natural world.</p>
+                  
+            </div>
+        </div>
+        
+    </div>
+    
+    <script src="index.js"></script>
+    <script>
+        var imageUrls = ['Images/Lumbini-Park.jpg','Images/zoopark.jpg','Images/botanica.jpg'];
+        var container = document.getElementById('backgroundContainer');
+        var currentIndex = 0;
+        function changeBackground() 
+        { container.style.backgroundImage = 'url("' + imageUrls[currentIndex] + '")';
+            currentIndex++;
+            if (currentIndex >= imageUrls.length)
+            {
+                currentIndex = 0;
+            }
+        }
+        changeBackground();
+        setInterval(changeBackground, 3000);
+    </script>
+</body>
+<footer>
+  <div class="copyright">
+      <b>&copy; 2024 Hyderabad | Privacy Policy.</b>
+  </div>
+</html>

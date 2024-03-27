@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Hyderabad City Info Application</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-right">
+           <a href="index.html"><b><p class="nav-text">HY<span class="hyderabad-text">DERABAD</span></p>
+           </a></b>
+        </div>
+        <div class="navbar-left">
+          <div class="search-container">
+            <div class="search-wrapper">
+              <i class="fas fa-search search-icon" onclick="toggleSearch()"></i>
+              <input type="text" class="search-input" placeholder="Search..." id="searchInput" onkeyup="showSuggestions(this.value)" >
+            </div>
+            <ul class="suggestion-list" id="suggestionList"></ul>
+          </div>
+          <b><a href="index.html" class="nav-item">Home</a>
+          <a href="shopping.html" class="nav-item">Shopping Places</a>
+          <a href="religiousplaces.html" class="nav-item">Religious Places</a>
+          <a href="historical.html" class="nav-item">Historical places</a>
+          <a href="park.html" class="nav-item">Parks</a>
+          <a href="culinary.html" class="nav-item">Culinary</a>
+        </b>
+       
+        </div>
+    </nav>
+    
+    <div class="inquiry-card">
+        <h2>Book Now</h2>
+        <br>
+        <form id="inquiryForm" action="index.php" method="post" >
+          <div class="form-group">
+            <label for="arrivalDate">Arrival Date</label>
+            <input type="date" id="arrivalDate" name="ArrivalDate" required>
+          </div>
+          <div class="form-group">
+            <label for="duration">Duration</label>
+            <select id="duration" name="Duration" required>
+              <option value="">Select Duration</option>
+              <option value="5-6 days">5-6 days</option>
+              <option value="7-8 days">7-8 days</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="adults">Adults</label>
+            <select id="adults" name="Adults" required>
+              <option value="">Select Adults</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="children">Children</label>
+            <select id="children" name="Children" required>
+              <option value="">Select Children</option>
+              <option value="0">0</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <!-- Add more options as needed -->
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="Name" required>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="Phone" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="Email" required>
+          </div>
+          <button type="submit" action="index.php" method="post">Submit</button>
+        </form>
+      </div>   
+      <div class="container">
+      <h1>Welcome to Hyderabad</h1>
+      <br>
+      </div>
+      <div class="cardcontainer">
+      <div class="card">
+        <a href="historical.html">
+        <img src="Images/Qutb_Shahi_Tomb.jpg" alt="Historical Places">
+       <b>Historical Places</b>
+        <div class="description">
+          <p>
+            Discover Hyderabad's historical gems like Charminar, Golconda Fort, and Qutb Shahi Tombs, reflecting the city's rich cultural heritage. Explore centuries of royal history and architectural brilliance, from the iconic Charminar to the majestic Qutb Shahi Tombs.</p>
+        </div>
+      </a>
+      </div>
+      
+      <div class="card">
+        <a href="cultural.html">
+        <img src="Images/Cultural.jpg" alt="Cultural Experiences">
+        <b>Cultural Experiences</b>
+        <div class="description">
+          <p>Experience Hyderabad's cultural richness at Salar Jung Museum, Birla Mandir, and Laad Bazaar, offering a diverse array of art, spirituality, and traditional craftsmanship. From exquisite art collections to serene temple architecture and bustling market alleys, these destinations promise immersive cultural experiences for visitors of all interests.</p>
+        </div>
+      </a>
+      </div>
+      <div class="card">
+        <a href="culinary.html">
+        <img src="Images/Culinary.jpg" alt="Culinary Delights">
+        <div class="description">
+          <b>Culinary Delights</b>
+          <p>Indulge in Hyderabad's culinary treasures with iconic Hyderabadi biryani and flavorful street food delights such as kebabs, dosas, and falooda. Savor the authenticity of Hyderabadi cuisine at renowned eateries like Paradise Restaurant, ensuring a memorable gastronomic journey.
+          </p>
+        </div>
+        </a>
+      </div>
+  
+    <div class="card">
+      <a href="park.html">
+      <img src="Images/park.jpg" alt="Nature and Parks">
+     <b>Nature and Parks</b>
+      <div class="description">
+        <p>
+          Explore Hyderabad's natural beauty with attractions like Hussain Sagar Lake featuring a monumental Buddha statue, Nehru Zoological Park boasting diverse wildlife, and Lumbini Park offering serene boat rides and picturesque city vistas. Discover tranquil escapes and vibrant biodiversity, making your Hyderabad visit unforgettable.</p>
+      </div>
+    </a>
+    </div>
+    <div class="card">
+      <a href="shopping.html">
+      <img src="Images/mall.jpg" alt="Shopping">
+     <b>Shopping</b>
+      <div class="description">
+        <p>
+          Explore Hyderabad's diverse shopping options at MG Road and Abids, known for their eclectic shops and boutiques, while modern shoppers can indulge in brand-name delights at Forum Sujana Mall and Inorbit Mall. For unique finds with a touch of history, venture into Sultan Bazaar and Begum Bazaar's antique stores, adding a distinctive flair to your shopping experience.</p>
+      </div>
+    </a>
+    </div>
+    <div class="card">
+      <a href="religiousplaces.html">
+      <img src="Images/temple.jpg" alt="Religious Site">
+     <b>Religious Places</b>
+      <div class="description">
+        <p>
+          Discover Hyderabad's spiritual essence at the historic Mecca Masjid and revered Chilkur Balaji Temple. Seek solace at the serene ISKCON Temple amidst tranquil surroundings and intricate architecture.</p>
+      </div>
+    </a>
+    </div>
+    
+
+
+    </div>
+    <script src="index.js"></script>
+</body>
+<footer>
+  <div class="copyright">
+      &copy; 2024 Hyderabad | Privacy Policy.
+  </div>
+</html>
